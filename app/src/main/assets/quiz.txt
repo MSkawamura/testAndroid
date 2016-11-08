@@ -1,0 +1,3 @@
+What is Nyanz?	A0	A1	A2
+What is Wanz?	B0	B1	B2
+What is Banz?	C0	C1	C2

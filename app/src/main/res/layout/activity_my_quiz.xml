@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.mkawamura.quizapp.MyQuiz">
+
+    <!-- スコア表示 -->
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 質問のテキスト -->
+    <TextView
+        android:id="@+id/qText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- 回答ボタン -->
+    <Button
+    android:id="@+id/a0Button"
+    android:onClick="checkAnswer"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp" />
+    <Button
+        android:id="@+id/a1Button"
+        android:onClick="checkAnswer"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <Button
+        android:id="@+id/a2Button"
+        android:onClick="checkAnswer"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <!-- 次のクイズへ進むボタン -->
+    <Button
+        android:id="@+id/nextButton"
+        android:onClick="goNext"
+        android:text="@string/next_button"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

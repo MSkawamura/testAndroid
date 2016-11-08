@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="title_activity_my_result">MyResult</string>
+
+    <string name="next_button">Next</string>
+    <string name="score_label">Your Score</string>
+    <string name="replay_button">Replay?</string>
+</resources>

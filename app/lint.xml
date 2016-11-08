@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="MyEd" severity="error">
+        <!-- このIssueIDのチェックを行わないファイルを指定しているコード？ -->
+        <!-- <ignore path="src/main/res/layout/activity_my_quiz.xml" /> -->
+    </issue>
+</lint>

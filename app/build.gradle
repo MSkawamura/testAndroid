@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.example.mkawamura.quizapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+}
+
+
+android {
+    lintOptions {
+        // Lintチェック中、Saverity「ERROR」が発生しても、Lintを中断せずに行う
+        abortOnError false
+        // issueID'MyEd'を無視してLintを行う
+        // disable 'MyEd', 'GoogleAppIndexingWarning'
+        // enable
+        // Lintチェックの進行状況を非表示にする
+        // quiet true
+        // ignoreWarnings true
+        // 指定したissueIDのみ構文チェックを行う
+        // fatal 'MyEd', 'GoogleAppIndexingWarning'
+        // noLines false
+        // showAll true
+        // textReport true
+        // textOutput 'text'
+        // lintConfig file("app/lint.xml")
+    }
+}
