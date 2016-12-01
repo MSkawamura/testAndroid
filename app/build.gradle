@@ -37,7 +37,7 @@ android {
         // quiet true
         // ignoreWarnings true
         // 指定したissueIDのみ構文チェックを行う
-        // fatal 'MyEd', 'GoogleAppIndexingWarning'
+        check 'GoogleAppIndexingWarning'
         // noLines false
         // showAll true
         // textReport true
