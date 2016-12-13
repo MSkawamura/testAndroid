@@ -30,15 +30,22 @@ android {
     lintOptions {
         // Lintチェック中、Saverity「ERROR」が発生しても、Lintを中断せずに行う
         abortOnError false
-        // issueID'MyEd'を無視してLintを行う
-        // disable 'MyEd', 'GoogleAppIndexingWarning'
-        // enable
+        // 指定したissueIDを無視してLintを行う(複数設定可)
+//s
+        // 指定したissueIDのLintを行う(複数設定可)
+//        enable 'MyEd', 'SetTextI18n'
         // Lintチェックの進行状況を非表示にする
-        // quiet true
+//        quiet true
         // ignoreWarnings true
-        // 指定したissueIDのみ構文チェックを行う
-        check 'GoogleAppIndexingWarning'
-        // noLines false
+        // 指定したissueIDのみ構文チェックを行う(複数設定可)
+//        check 'MyEd', 'SetTextI18n'
+//        noLines false
+        // 指定したissueIDのSeverityを変更する
+        // fatal 'SetTextI18n'
+        // error 'SetTextI18n'
+        // warning 'SetTextI18n'
+//        ignore 'SetTextI18n'
+
         // showAll true
         // textReport true
         // textOutput 'text'
